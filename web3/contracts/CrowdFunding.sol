@@ -8,7 +8,7 @@ contract CrowdFunding {
         string description;
         uint256 target;
         uint256 deadline;
-        uint256 amountCollected;
+        uint256 raisedAmount;
         string image;
         address[] donators;
         uint256[] donations;
@@ -28,7 +28,7 @@ contract CrowdFunding {
         campaign.description = _description;
         campaign.target = _target;
         campaign.deadline = _deadline;
-        campaign.amountCollected = 0;
+        campaign.raisedAmount = 0;
         campaign.image = _image;
 
         numberOfCampaigns++;
